@@ -1,0 +1,5 @@
+obj/Debug/net9.0/Protos/Example.cs \
+obj/Debug/net9.0/Protos/ExampleGrpc.cs: /Users/fblood53/.nuget/packages/grpc.tools/2.71.0/build/native/include/google/protobuf/duration.proto\
+ /Users/fblood53/.nuget/packages/grpc.tools/2.71.0/build/native/include/google/protobuf/timestamp.proto\
+ /Users/fblood53/.nuget/packages/grpc.tools/2.71.0/build/native/include/google/protobuf/wrappers.proto\
+ Protos/example.proto

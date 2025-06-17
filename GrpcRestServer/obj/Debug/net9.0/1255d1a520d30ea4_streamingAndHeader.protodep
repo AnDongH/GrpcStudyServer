@@ -1,0 +1,2 @@
+obj/Debug/net9.0/Protos/StreamingAndHeader.cs \
+obj/Debug/net9.0/Protos/StreamingAndHeaderGrpc.cs: Protos/streamingAndHeader.proto

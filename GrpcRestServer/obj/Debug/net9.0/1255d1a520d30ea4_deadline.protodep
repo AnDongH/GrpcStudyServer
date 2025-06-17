@@ -1,0 +1,2 @@
+obj/Debug/net9.0/Protos/Deadline.cs \
+obj/Debug/net9.0/Protos/DeadlineGrpc.cs: Protos/deadline.proto

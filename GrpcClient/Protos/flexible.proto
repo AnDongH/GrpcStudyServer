@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+import "google/protobuf/any.proto";
+import "google/protobuf/struct.proto";
+
+option csharp_namespace = "GrpcClient";
+
+service Flexible{
+  
+  // 단일 타입을 리턴하는 메서드
+  rpc GetStatusStruct (StatusRequest) returns (Status);
+  rpc GetStatusJson (StatusRequest) returns (Status);
+  
+  // 여러 타입을 리턴하는 메서드
+  rpc GetResponseMessage (ResponseMessageRequest) returns (ResponseMessage);
+
+}
+
+message StatusRequest { }
+message ResponseMessageRequest { }
+
+message Status {
+  string message = 1;
+  
+  // object 같은거임
+  google.protobuf.Any detail = 2;
+  
+  // json 같은 동적 데이터 같은거임
+  google.protobuf.Value data = 3;
+}
+
+message ResponseMessage {
+  // 여러값 중 하나의 값을 나타낼 때 사용
+  // 보통 클라이언트 쪽에서 사용하는 메시지인듯
+  oneof result {
+    int32 error = 1;
+    string person = 2;
+  }
+}
+

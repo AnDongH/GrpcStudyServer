@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>disable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <!-- 서버로서 역할을 하는 서비스라면 Server -->
+        <!-- 클라이언트로서 역할을 하는 서비스라면 Client -->
+        <!-- 양쪽 다 Both (보통 양방향 통신시) -->
+        <!-- 공통 타입만 필요하면 None -->
+        <Protobuf Include="Protos\greet.proto" GrpcServices="Both"/>
+        <Protobuf Include="Protos\example.proto" GrpcServices="Server"/>
+        <Protobuf Include="Protos\customDecimal.proto" GrpcServices="None"/>
+        <Protobuf Include="Protos\collectionType.proto" GrpcServices="Server"/>
+        <Protobuf Include="Protos\flexible.proto" GrpcServices="Server"/>
+        <Protobuf Include="Protos\streamingAndHeader.proto" GrpcServices="Server"/>
+        <Protobuf Include="Protos\deadline.proto" GrpcServices="Server"/>
+        <Protobuf Include="Protos\errorHandle.proto" GrpcServices="Server"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="CloudStructures" Version="3.4.1" />
+        <PackageReference Include="Dapper" Version="2.1.66" />
+        <PackageReference Include="Grpc.AspNetCore" Version="2.71.0" />
+        <PackageReference Include="Grpc.StatusProto" Version="2.71.0" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+        <PackageReference Include="Npgsql" Version="9.0.3" />
+    </ItemGroup>
+
+</Project>

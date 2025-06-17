@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcClient";
+
+service StreamingAndHeader {
+  
+  // 서버 -> 클라이언트 스트리밍 메서드
+  rpc ServerStreaming (ServerStreamRequest) returns (stream ServerStreamResponse);
+  
+  // 클라이언트 -> 서버 스트리밍 메서드
+  rpc ClientStreaming (stream ClientStreamRequest) returns (ClientStreamResponse);
+  
+  // 양방향 스트리밍 메서드
+  rpc BidirectionalStreaming (stream ClientStreamRequest) returns (stream ServerStreamResponse);
+  
+  // 헤더를 사용하는 메서드
+  rpc Header (HeaderRequest) returns (HeaderResponse);
+
+  rpc Trailer (HeaderRequest) returns (HeaderResponse);
+}
+
+message ServerStreamRequest {
+  int32 stream_count = 1;
+}
+
+message ServerStreamResponse {
+  int32 num = 1;
+}
+
+message ClientStreamRequest {
+  int32 num = 1;
+}
+
+message ClientStreamResponse {
+  bool is_success = 1;
+}
+
+message HeaderRequest {
+  
+}
+
+message HeaderResponse {
+  
+}

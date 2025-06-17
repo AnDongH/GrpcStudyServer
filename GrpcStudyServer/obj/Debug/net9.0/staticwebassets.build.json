@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "UmUfVXhKidHASXUUXeLjr3O+AmofAzBkdo11TPlYGJg=",
+  "Source": "GrpcStudyServer",
+  "BasePath": "_content/GrpcStudyServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package CustomTypes;
+
+// decimal은 기본적으로 지원을 안해서 이렇게 커스텀 타입 만들어야함
+// Example: 12345.6789 -> { units = 12345, nanos = 678900000 }
+message DecimalValue {
+
+  // Whole units part of the amount
+  int64 units = 1;
+
+  // Nano units of the amount (10^-9)
+  // Must be same sign as units
+  sfixed32 nanos = 2;
+}

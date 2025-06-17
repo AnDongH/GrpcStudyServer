@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcStudyServer", "GrpcStudyServer\GrpcStudyServer.csproj", "{80728A09-CECC-4F8E-8A23-E0F414C65651}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcClient", "GrpcClient\GrpcClient.csproj", "{FF3CCA29-DA3D-4013-947A-EDAC0C2A2477}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcRestServer", "GrpcRestServer\GrpcRestServer.csproj", "{7AB75FD6-F992-4B84-A0C6-01CBDA4C43F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80728A09-CECC-4F8E-8A23-E0F414C65651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80728A09-CECC-4F8E-8A23-E0F414C65651}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80728A09-CECC-4F8E-8A23-E0F414C65651}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80728A09-CECC-4F8E-8A23-E0F414C65651}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF3CCA29-DA3D-4013-947A-EDAC0C2A2477}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF3CCA29-DA3D-4013-947A-EDAC0C2A2477}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF3CCA29-DA3D-4013-947A-EDAC0C2A2477}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF3CCA29-DA3D-4013-947A-EDAC0C2A2477}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AB75FD6-F992-4B84-A0C6-01CBDA4C43F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AB75FD6-F992-4B84-A0C6-01CBDA4C43F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AB75FD6-F992-4B84-A0C6-01CBDA4C43F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AB75FD6-F992-4B84-A0C6-01CBDA4C43F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

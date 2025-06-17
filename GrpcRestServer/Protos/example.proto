@@ -1,0 +1,64 @@
+syntax = "proto3";
+
+import "google/protobuf/duration.proto";
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/wrappers.proto";
+
+service ExampleService {
+  // Unary
+  rpc UnaryCall (ExampleRequest) returns (ExampleResponse);
+
+  rpc UnaryHeaderCall (ExampleRequest) returns (ExampleResponse);
+
+  // Server streaming
+  rpc StreamingFromServer (ExampleRequest) returns (stream ExampleResponse);
+
+  // Client streaming
+  rpc StreamingFromClient (stream ExampleRequest) returns (ExampleResponse);
+
+  // Bi-directional streaming
+  rpc StreamingBothWays (stream ExampleRequest) returns (stream ExampleResponse);
+
+  rpc DownloadResults(DataRequest) returns (DataResponse);
+}
+
+// 이렇게 사용했다만, 변수 네이밍 규칙은 snake_case로 하는걸 권장한다.
+message ExampleRequest {
+  
+  // 여기에 있는 숫자는 디폴트값이 아니라 직렬화 순서를 말함
+  int32 pageIndex = 1;
+  int32 pageSize = 2;
+  bool isDescending = 3;
+}
+
+message ExampleResponse {
+}
+
+message DataRequest{
+  
+}
+
+message DataResponse{
+  bytes data = 1; // C#의 ByteString 타입
+}
+
+message Meeting {
+  string subject = 1;
+  
+  // DateTime 이지만 실제 생성되는 타입은 이게 아님.
+  // Google.Protobuf.WellKnownTypes.Timestamp 타입이 된다.
+  // 여기서 DateTime으로 변경이 가능함
+  google.protobuf.Timestamp start = 2;
+  
+  // TimeSpan 이지만 실제 생성되는 타입은 이게 아님.
+  // Google.Protobuf.WellKnownTypes.Duration 타입이 된다.
+  // 여기서 TimeSpan으로 변경이 가능함
+  google.protobuf.Duration duration = 3;
+}
+
+
+// Nullable 타입을 사용하고 싶다면, 아래와 같이 사용할 수 있다.
+message Person {
+  // ...
+  google.protobuf.Int32Value age = 1;
+}

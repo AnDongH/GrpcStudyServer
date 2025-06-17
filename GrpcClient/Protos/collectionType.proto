@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcClient";
+
+// 만약 옵션으로 csharp_namespace를 지정하지 않으면, 이게 네임스페이스가 됨
+//package c;
+
+service CollectionType {
+  // 그룹을 가져오는 메서드
+  rpc GetGroup (GetGroupRequest) returns (Group);
+}
+
+message GetGroupRequest {
+  
+}
+
+message Group {
+  // 리스트.
+  // repeated를 붙여줘야함
+  // C#에서는 Google.Protobuf.Collections.RepeatedField<T> 타입이 됨
+  repeated string persons = 1;
+  
+  // 딕셔너리
+  // map을 사용해서 딕셔너리 형태로 만들 수 있다.
+  // C#에서는 Google.Protobuf.Collections.MapField<TKey, TValue> 타입이 됨
+  map <string, string> personJob = 2; // key, value
+}
+

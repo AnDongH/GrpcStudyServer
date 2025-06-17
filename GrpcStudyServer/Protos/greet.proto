@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+// 네임스페이스는 해당 프로젝트에 맞춰줘야함
+option csharp_namespace = "GrpcStudyServer";
+
+package greet;
+
+// 서비스 정의
+service Greeter {
+  // 서비스에서 사용할 rpc 메서드 정의
+  // Server는 해당 추상 메서드를 구현해야하고,
+  // Client는 해당 메서드를 Async로 호출할 수 있다.
+  rpc SayHello (HelloRequest) returns (HelloReply);
+}
+
+// 매개변수 정의
+message HelloRequest {
+  string name = 1;
+}
+
+// 리턴 정의
+message HelloReply {
+  string message = 1;
+}
+
+// 매개변수와 응답 모두 단일 타입만 가능하다.

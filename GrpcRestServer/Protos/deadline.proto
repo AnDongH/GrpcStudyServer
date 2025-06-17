@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcRestServer";
+
+service Deadline { 
+  rpc SayHello (DeadlineRequest) returns (DeadlineResponse);
+  rpc SayHello2 (DeadlineRequest) returns (DeadlineResponse);
+}
+
+message DeadlineRequest {
+  string name = 1;
+}
+
+message DeadlineResponse {
+  string message = 1;
+}

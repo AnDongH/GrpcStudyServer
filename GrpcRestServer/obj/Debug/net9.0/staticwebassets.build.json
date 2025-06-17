@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "nNOEXzxRsNz/Bd+16w3wk9tl85az8Ute76dbMeASb18=",
+  "Source": "GrpcRestServer",
+  "BasePath": "_content/GrpcRestServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

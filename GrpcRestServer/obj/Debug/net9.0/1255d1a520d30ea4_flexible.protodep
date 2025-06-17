@@ -1,0 +1,4 @@
+obj/Debug/net9.0/Protos/Flexible.cs \
+obj/Debug/net9.0/Protos/FlexibleGrpc.cs: /Users/fblood53/.nuget/packages/grpc.tools/2.71.0/build/native/include/google/protobuf/any.proto\
+ /Users/fblood53/.nuget/packages/grpc.tools/2.71.0/build/native/include/google/protobuf/struct.proto\
+ Protos/flexible.proto

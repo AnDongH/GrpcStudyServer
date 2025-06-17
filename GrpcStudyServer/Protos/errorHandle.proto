@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcStudyServer";
+
+service ErrorHandle {
+  rpc StandardError (ErrorRequest) returns (ErrorResponse);
+  rpc StatusCodeError (ErrorRequest) returns (ErrorResponse);
+  rpc ErrorHandlePattern (ErrorRequest) returns (ErrorResponse);
+  rpc RichError (ErrorRequest) returns (ErrorResponse);
+  rpc ErrorWithRetry (ErrorRequest) returns (ErrorResponse);
+}
+
+message ErrorRequest {
+  string name = 1;
+}
+
+message ErrorResponse {
+  string message = 1;
+}
