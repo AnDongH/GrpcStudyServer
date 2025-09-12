@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k7WfXrqJ+qU=",
+  "dgSpecHash": "XEpDamCQ88s=",
   "success": true,
-  "projectFilePath": "/Users/fblood53/Projects/private/GrpcStudyServer/GrpcRestServer/GrpcRestServer.csproj",
+  "projectFilePath": "/Users/fblood53/Projects/githubs/GrpcStudyServer/GrpcRestServer/GrpcRestServer.csproj",
   "expectedPackageFiles": [
     "/Users/fblood53/.nuget/packages/cloudstructures/3.4.1/cloudstructures.3.4.1.nupkg.sha512",
     "/Users/fblood53/.nuget/packages/dapper/2.1.66/dapper.2.1.66.nupkg.sha512",

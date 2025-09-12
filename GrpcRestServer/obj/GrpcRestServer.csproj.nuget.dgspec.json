@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/fblood53/Projects/private/GrpcStudyServer/GrpcRestServer/GrpcRestServer.csproj": {}
+    "/Users/fblood53/Projects/githubs/GrpcStudyServer/GrpcRestServer/GrpcRestServer.csproj": {}
   },
   "projects": {
-    "/Users/fblood53/Projects/private/GrpcStudyServer/GrpcRestServer/GrpcRestServer.csproj": {
+    "/Users/fblood53/Projects/githubs/GrpcStudyServer/GrpcRestServer/GrpcRestServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/fblood53/Projects/private/GrpcStudyServer/GrpcRestServer/GrpcRestServer.csproj",
+        "projectUniqueName": "/Users/fblood53/Projects/githubs/GrpcStudyServer/GrpcRestServer/GrpcRestServer.csproj",
         "projectName": "GrpcRestServer",
-        "projectPath": "/Users/fblood53/Projects/private/GrpcStudyServer/GrpcRestServer/GrpcRestServer.csproj",
+        "projectPath": "/Users/fblood53/Projects/githubs/GrpcStudyServer/GrpcRestServer/GrpcRestServer.csproj",
         "packagesPath": "/Users/fblood53/.nuget/packages/",
-        "outputPath": "/Users/fblood53/Projects/private/GrpcStudyServer/GrpcRestServer/obj/",
+        "outputPath": "/Users/fblood53/Projects/githubs/GrpcStudyServer/GrpcRestServer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/fblood53/.nuget/NuGet/NuGet.Config"

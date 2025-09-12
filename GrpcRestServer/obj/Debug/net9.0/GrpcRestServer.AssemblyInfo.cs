@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GrpcRestServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ff89898f1d52972a471522c03369249fbfa5480")]
 [assembly: System.Reflection.AssemblyProductAttribute("GrpcRestServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GrpcRestServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

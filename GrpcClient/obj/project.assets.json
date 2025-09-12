@@ -305,11 +305,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/fblood53/Projects/private/GrpcStudyServer/GrpcClient/GrpcClient.csproj",
+      "projectUniqueName": "/Users/fblood53/Projects/githubs/GrpcStudyServer/GrpcClient/GrpcClient.csproj",
       "projectName": "GrpcClient",
-      "projectPath": "/Users/fblood53/Projects/private/GrpcStudyServer/GrpcClient/GrpcClient.csproj",
+      "projectPath": "/Users/fblood53/Projects/githubs/GrpcStudyServer/GrpcClient/GrpcClient.csproj",
       "packagesPath": "/Users/fblood53/.nuget/packages/",
-      "outputPath": "/Users/fblood53/Projects/private/GrpcStudyServer/GrpcClient/obj/",
+      "outputPath": "/Users/fblood53/Projects/githubs/GrpcStudyServer/GrpcClient/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/fblood53/.nuget/NuGet/NuGet.Config"
